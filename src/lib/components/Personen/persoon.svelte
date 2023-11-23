@@ -1,4 +1,16 @@
 <!-- Personen component -->
+
+<script>
+        import { onMount } from 'svelte';
+            onMount(() => {
+                const enhancedDescription = document.querySelector("#enhancedDescription");
+
+                enhancedDescription.classList.add("hide");
+        });
+
+    
+</script>
+
 <section class="persoon_section">
   <article class="#">
     <h1 class="persoon_naam">Elske Rollema</h1>
@@ -13,7 +25,7 @@
 
   <article class="persoon_beschrijving">
     <h2 class="beschrijving_titel">Mijn werk en hobbies ▼</h2>
-    <p class="beschrijving">
+    <p id="enhancedDescription" class="beschrijving">
       Kom in je kracht en krijg inzichten in jezelf. Vind je balans en je eigen
       wijsheid door middel van coaching, counselling, werken met dromen,
       dagdroom therapie, hypnose, etc. Kom langs voor een gratis intake en
@@ -68,7 +80,7 @@
   }
 
   .beschrijving {
-    display: none;
+    /* display: block; */
     font-size: 16px;
     text-align: left;
   }
