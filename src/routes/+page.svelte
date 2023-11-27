@@ -1,5 +1,6 @@
 <script>
-    	import Persoon from '$lib/components/Personen/persoon.svelte';
+    	// import Persoon from '$lib/components/Personen/persoon.svelte';
+		import Personen from '$lib/organisms/personen.svelte';
 </script>
 
-<Persoon />
+<Personen />
